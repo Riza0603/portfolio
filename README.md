@@ -35,7 +35,7 @@ src/
 ## 📬 Contact
 
 - 📧 rizafarooq39@gmail.com
-- 🌐 [Portfolio Live](https://your-deployment-link.com)
+- 🌐 [Portfolio Live](https://riza-portfolio.netlify.app)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/riza0603)
 - 💻 [GitHub](https://github.com/Riza0603)
 
