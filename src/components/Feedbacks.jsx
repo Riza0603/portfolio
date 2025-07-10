@@ -9,7 +9,7 @@ import { testimonials } from "../constants";
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => {
+const FeedbackCard = ({ index, testimonial, name, designation, company }) => {
   // Use a `ref` to apply GSAP animations
   const cardRef = React.useRef(null);
 
@@ -56,12 +56,6 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
               {designation} of {company}
             </p>
           </div>
-
-          <img
-            src={image}
-            alt={`feedback_by-${name}`}
-            className="w-10 h-10 rounded-full object-cover"
-          />
         </div>
       </div>
     </div>

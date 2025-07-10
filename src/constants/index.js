@@ -1,4 +1,3 @@
-
 import {
   logo,
   backend,
@@ -16,7 +15,6 @@ import {
   express,
   aws,
   mui,
-  
   gsap,
   framer,
   figma,
@@ -32,138 +30,57 @@ import {
   firstTestimonial,
   secondTestimonial,
   thirdTestimonial,
-} from '../assets'
+  php,
+  java,
+  android,
+} from "../assets";
 
-
-// Import Tekisky separately
-import tekisky from "../assets/company/tekisky.png";
-
+import ganglia from "../assets/company/ganglia.png"; // Placeholder for Ganglia logo
 
 export const navLinks = [
-
-
-  {
-    id: "about",
-    title: "About",
-    
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  { id: "about", title: "About" },
+  { id: "work", title: "Work" },
+  { id: "education", title: "Education" },
+  { id : "resume", title: "Resume" },
+  { id: "contact", title: "Contact" },
 ];
 
 const services = [
-  {
-    title: "Full-Stack Developer",
-    icon: web,
-  },
-  {
-    title: "Frontend Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Ui UX Designer",
-    icon: creator,
-  },
+  { title: "Full-Stack Developer", icon: web },
+  { title: "Frontend Developer", icon: mobile },
+  { title: "Backend Developer", icon: backend },
+  { title: "UI/UX Designer", icon: creator },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "gsap",
-    icon: gsap,
-  },
-  {
-    name: "framer",
-    icon: framer,
-  },
-
- 
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Material Ui",
-    icon: mui,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "Express Js",
-    icon: express,
-  },
-  {
-    name: "AWS",
-    icon: aws,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "MySql",
-    icon: mysql,
-  },
-
-  {
-    name: "git",
-    icon: git,
-  },
- 
-
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "PHP", icon: php },
+  { name: "JAVA", icon: java },
+  { name: "JavaScript", icon: javascript },
+  { name: "React JS", icon: reactjs },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Node JS", icon: nodejs },
+  { name: "Express Js", icon: express },
+  { name: "MongoDB", icon: mongodb },
+  { name: "MySQL", icon: mysql },
+  { name: "Android", icon: android },
+  { name: "AWS", icon: aws },
+  { name: "Git", icon: git },
 ];
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
-    company_name: "Tekisky",
-    icon: tekisky,
+    title: "Software Developer Intern",
+    company_name: "Ganglia Technologies",
+    icon: ganglia,
     iconBg: "#383E56",
-    date: "Jan 2023 - present",
+    date: "Jan 2025 - May 2025",
     points: [
-      "Developing and maintaining web applications using MERN technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed web applications using the MERN stack.",
+      "Enhanced performance and reliability through backend optimization.",
+      "Built responsive UI components with improved mobile experience.",
+      "Used Git for version control with proper branching and merging.",
     ],
   },
 ];
@@ -171,103 +88,115 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Huzaif proved me wrong.",
-    name: "MD Mustaqeem",
-    designation: "Ecommerce",
-    company: "QuickMart",
-    image: firstTestimonial,
+      "Riza is a dependable and driven developer who quickly adapts to new challenges and technologies.",
+    name: "Mentor",
+    designation: "Team Lead",
+    company: "Ganglia Technologies",
+    
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Huzaif does.",
-    name: "Abdul Raheman",
-    designation: "Ecommerce Business",
-    company: "justbuyz",
-    image: secondTestimonial,
+      "Riza played a key role in improving the performance of our web applications during his internship.",
+    name: "Colleague",
+    designation: "Software Engineer Intern",
+    company: "Ganglia Technologies",
+    
   },
   {
     testimonial:
-      "After Huzaif optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "James Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: thirdTestimonial,
+      "He is committed, a quick learner, and great at collaborating with cross-functional teams.",
+    name: "Professor",
+    designation: "MCA Department",
+    company: "Manipal Institute of Technology",
+    
+  },
+];
+
+import mitIcon from "../assets/education/mit.png";
+import bascIcon from "../assets/education/bck.png";
+import vivekaIcon from "../assets/education/vjc.png";
+import bearysIcon from "../assets/education/bearys.png";
+
+const educations = [
+  {
+    title: "Master of Computer Applications (MCA)",
+    institution: "Manipal Institute of Technology",
+    icon: mitIcon, // Replace with actual import if available
+    iconBg: "#915EFF",
+    date: "Aug 2023 - July 2025",
+    points: ["CGPA: 8.83"],
+  },
+  {
+    title: "Bachelor of Computer Applications (BCA)",
+    institution: "Bhandarkars Arts and Science College",
+    icon: bascIcon,
+    iconBg: "#383E56",
+    date: "Aug 2020 - June 2023",
+    points: ["CGPA: 9.13"],
+  },
+  {
+    title: "Pre-University (PU)",
+    institution: "Viveka PU College",
+    icon: vivekaIcon,
+    iconBg: "#1D1836",
+    date: "June 2018 - Mar 2019",
+    points: ["Score: 91.50%"],
+  },
+  {
+    title: "SSLC",
+    institution: "Bearys Seaside Public School, Kodi",
+    icon: bearysIcon,
+    iconBg: "#2D2E32",
+    date: "June 2016 - Mar 2017",
+    points: ["Score: 95.36%"],
   },
 ];
 
 const projects = [
   {
-    name: "Tekisky Mart",
+    name: "Sprintly",
     description:
-      "Tekisky Mart is a web-based platform that allows users to search, explore, and purchase a wide range of products from various providers, offering a seamless and efficient shopping experience.",
+      "A project management tool for task tracking, team collaboration, and document uploads built using the MERN stack.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
- 
+      { name: "react", color: "blue-text-gradient" },
+      { name: "node", color: "green-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "express", color: "white-text-gradient" },
     ],
     image: project2,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Riza0603/Sprintly/", // Update with actual link if available
   },
   {
-    name: "GearXpert",
+    name: "Vehicle Rental App",
     description:
-      "GearXpert is your ultimate destination for premium auto parts and accessories, Whether you're an automobile enthusiast or a professional, find everything you need to upgrade, repair.",
+      "Android app developed with Firebase to browse, book, and manage rentals for bikes, cars, and EVs.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "emailJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Gsap",
-        color: "pink-text-gradient",
-      },
+      { name: "android", color: "blue-text-gradient" },
+      { name: "firebase", color: "green-text-gradient" },
     ],
     image: gearXpert,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Riza0603/", // Update with actual link if available
   },
   {
-    name: "GoGroove-Ecommerce",
+    name: "Hospital Management System",
     description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
+      "Web app to manage appointments, doctors, and patients using PHP, HTML, CSS, and JavaScript.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
+      { name: "php", color: "blue-text-gradient" },
+      { name: "html", color: "white-text-gradient" },
+      { name: "css", color: "pink-text-gradient" },
+      { name: "javascript", color: "yellow-text-gradient" },
     ],
     image: project3,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Riza0603/Hospital-Management-System/", // Update with actual link if available
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  educations,
+  testimonials,
+  projects,
+};

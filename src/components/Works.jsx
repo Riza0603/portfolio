@@ -36,10 +36,10 @@ const ProjectCard = ({
         y: 0,
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",  // Trigger when the top of the element hits the bottom of the viewport
-          end: "top center",    // End when the top reaches the center of the viewport
-          scrub: true,          // Smoothly sync scroll and animation
-          markers: false,       // Set to `true` to see debug markers
+          start: "top bottom", // Trigger when the top of the element hits the bottom of the viewport
+          end: "top center", // End when the top reaches the center of the viewport
+          scrub: true, // Smoothly sync scroll and animation
+          markers: false, // Set to `true` to see debug markers
         },
       }
     );
@@ -111,7 +111,7 @@ const Works = () => {
         stagger: 0.1, // Stagger delay of 0.3 seconds between each card
         scrollTrigger: {
           trigger: ".works-container",
-          start: "top bottom",  // Trigger when the top of the container reaches the bottom
+          start: "top bottom", // Trigger when the top of the container reaches the bottom
           end: "top center",
           scrub: true,
           markers: false, // Set to true to see debug markers
@@ -129,7 +129,11 @@ const Works = () => {
 
       <div className="w-full flex">
         <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          The following projects showcase my skills and experience through
+          real-world examples. Each project includes a brief description and
+          links to code repositories. They reflect my ability to solve complex
+          problems, work with various technologies, and manage projects
+          effectively.
         </p>
       </div>
 
