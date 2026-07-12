@@ -11,9 +11,11 @@ import {
   gearXpert,
   project2,
   project3,
+  docker,
   mysql,
   express,
   aws,
+  rabbitmq,
   mui,
   gsap,
   framer,
@@ -27,6 +29,9 @@ import {
   redux,
   tailwind,
   threejs,
+  typescript,
+  flutter,
+  cpp,
   firstTestimonial,
   secondTestimonial,
   thirdTestimonial,
@@ -35,7 +40,8 @@ import {
   android,
 } from "../assets";
 
-import ganglia from "../assets/company/ganglia.png"; // Placeholder for Ganglia logo
+import ganglia from "../assets/company/ganglia.png";
+import blackfrog from "../assets/company/blackfrog.png";
 
 export const navLinks = [
   { id: "about", title: "About" },
@@ -55,24 +61,48 @@ const services = [
 const technologies = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
-  { name: "PHP", icon: php },
-  { name: "JAVA", icon: java },
   { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
   { name: "React JS", icon: reactjs },
   { name: "Tailwind CSS", icon: tailwind },
+  { name: "Android", icon: android },
+  { name: "Flutter", icon: flutter },
+
   { name: "Node JS", icon: nodejs },
   { name: "Express Js", icon: express },
+  { name: "RabbitMQ", icon: rabbitmq },
+
   { name: "MongoDB", icon: mongodb },
   { name: "MySQL", icon: mysql },
-  { name: "Android", icon: android },
+
+  { name: "Docker", icon: docker },
   { name: "AWS", icon: aws },
   { name: "Git", icon: git },
+
+  { name: "JAVA", icon: java },
+  { name: "C/C++", icon: cpp },
+  { name: "PHP", icon: php },
 ];
 
 const experiences = [
   {
+    title: "Junior Software Engineer",
+    company_name: "Blackfrog Technologies Pvt. Ltd.",
+    location: "Manipal, Karnataka",
+    icon: blackfrog,
+    iconBg: "#0f172a",
+    date: "Aug 2025 - Present",
+    points: [
+      "Developing backend services for medical device monitoring platforms using Node.js, MongoDB, Express.js, and RabbitMQ.",
+      "Integrated SMS, IVR, and Email alerting solutions using Twilio and telecom platforms while supporting TRAI DLT compliance requirements.",
+      "Contributed to Flutter-based BLE applications for communication with embedded sensor devices and real-time telemetry visualization.",
+      "Worked with AWS, Docker, GitLab CI/CD, SonarCloud, Nginx, and SSL management for deployment and production support.",
+    ],
+  },
+  {
     title: "Software Developer Intern",
     company_name: "Ganglia Technologies",
+    location: "Manipal, Karnataka",
     icon: ganglia,
     iconBg: "#383E56",
     date: "Jan 2025 - May 2025",

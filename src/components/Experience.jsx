@@ -13,6 +13,13 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
+  const companyInitials = experience.company_name
+    .split(" ")
+    .map((word) => word[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -24,11 +31,17 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[90%] h-[90%] object-contain'
-          />
+          {experience.icon ? (
+            <img
+              src={experience.icon}
+              alt={experience.company_name}
+              className='w-[90%] h-[90%] object-contain'
+            />
+          ) : (
+            <span className='text-white text-[18px] font-bold tracking-wider'>
+              {companyInitials}
+            </span>
+          )}
         </div>
       }
     >
@@ -40,6 +53,9 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
+        {experience.location && (
+          <p className='text-white-100 text-[13px] mt-1'>{experience.location}</p>
+        )}
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
