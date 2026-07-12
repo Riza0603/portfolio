@@ -61,6 +61,12 @@ const About = () => {
   const headingRef = useRef(null);
   const paragraphRef = useRef(null);
 
+  const highlights = [
+    "Backend and event-driven systems",
+    "IoT, BLE, and telemetry workflows",
+    "AWS, Docker, and CI/CD delivery",
+  ];
+
   // Heading Animation
   useGsap(headingRef, {
     from: { opacity: 0, x: -50 },
@@ -81,21 +87,34 @@ const About = () => {
     <>
       <div ref={headingRef}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About Me.</h2>
       </div>
 
-      <p
-        ref={paragraphRef}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I'm Mohammed Riza, a passionate software developer with hands-on
-        experience in the MERN stack. I’ve built scalable web and Android apps
-        using React, Node.js, Firebase, and MongoDB. I enjoy collaborating with
-        teams, optimizing backend performance, and crafting responsive UIs.
-        Let’s work together to turn your ideas into real-world applications!
-      </p>
+      <div className="mt-4 max-w-4xl space-y-5">
+        <p
+          ref={paragraphRef}
+          className="text-secondary text-[17px] leading-[30px]"
+        >
+          I’m Mohammed Riza, a software developer focused on backend systems,
+          IoT-enabled products, and reliable cloud delivery. My work spans
+          Node.js, MongoDB, RabbitMQ, Flutter, AWS, Docker, and CI/CD,
+          with an emphasis on clean execution, scalability, and production
+          readiness.
+        </p>
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10">
+        <div className="flex flex-wrap gap-3">
+          {highlights.map((highlight) => (
+            <span
+              key={highlight}
+              className="rounded-full border border-white/10 bg-tertiary/70 px-4 py-2 text-[13px] text-white-100 shadow-card"
+            >
+              {highlight}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

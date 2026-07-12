@@ -52,10 +52,10 @@ export const navLinks = [
 ];
 
 const services = [
-  { title: "Full-Stack Developer", icon: web },
-  { title: "Frontend Developer", icon: mobile },
-  { title: "Backend Developer", icon: backend },
-  { title: "UI/UX Designer", icon: creator },
+  { title: "Backend & IoT Systems", icon: backend },
+  { title: "Frontend Engineering", icon: mobile },
+  { title: "Full-Stack Delivery", icon: web },
+  { title: "UI/UX Design", icon: creator },
 ];
 
 const technologies = [
